@@ -35,7 +35,7 @@ const randomNum = Math.floor(Math.random() * this.state.stuff.length + 1);
 
   return (
     <div className="App">
-      
+      hello
       {this.coolFunction()}
     </div>
   )
