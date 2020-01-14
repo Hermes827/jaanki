@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-size: 10px;
 }
 
 .App-logo {
@@ -35,4 +36,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.flashcard {
+  border-style: solid;
+  border-color: black;
+  border-width: medium;
+  font-size: 2em;
+  width: 30em;
+  margin: auto;
+  margin-top: 10em;
 }

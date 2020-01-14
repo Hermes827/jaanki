@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import FlashCard from './components/FlashCard.js'
 
 class App extends React.Component {
 
@@ -22,21 +23,13 @@ componentDidMount(){
   })
 }
 
-coolFunction(){
-const randomNum = Math.floor(Math.random() * this.state.stuff.length + 1);
-  if(this.state.stuff.length > 0){
-    return (
-      <h1>{this.state.stuff[randomNum].front}</h1>
-    )
-  }
-}
+
 
   render(){
 
   return (
     <div className="App">
-      hello
-      {this.coolFunction()}
+      <FlashCard words={this.state.stuff}/>
     </div>
   )
 }
