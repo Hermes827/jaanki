@@ -47,3 +47,12 @@
   margin: auto;
   margin-top: 10em;
 }
+
+.WelcomePage {
+  margin: 0 50em;
+  margin-top: 20em;
+  border-style: solid;
+  border-width: medium;
+  border-color: black;
+  padding-bottom: 1em;
+}

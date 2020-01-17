@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import FlashCard from './components/FlashCard.js'
+import WelcomePage from './components/WelcomePage.js'
 
 class App extends React.Component {
 
@@ -10,6 +11,9 @@ constructor(){
   this.state = {
     stuff: []
   }
+
+  this.createNewUser = this.createNewUser.bind(this)
+
 }
 
 componentDidMount(){
@@ -23,13 +27,19 @@ componentDidMount(){
   })
 }
 
+createNewUser(){
+  console.log("hello")
+}
 
+// <FlashCard words={this.state.stuff}/>
 
   render(){
 
   return (
-    <div className="App">
-      <FlashCard words={this.state.stuff}/>
+    <div className="app">
+    <h1>Welcome to Jaanki!</h1>
+    <button onClick={()=> this.createNewUser()}>signup!</button>
+    <button>login</button>
     </div>
   )
 }
