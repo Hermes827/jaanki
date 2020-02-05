@@ -12,7 +12,7 @@ constructor(){
     stuff: []
   }
 
-  this.createNewUser = this.createNewUser.bind(this)
+  // this.createNewUser = this.createNewUser.bind(this)
 
 }
 
@@ -27,19 +27,16 @@ componentDidMount(){
   })
 }
 
-createNewUser(){
-  console.log("hello")
-}
-
-// <FlashCard words={this.state.stuff}/>
+// createNewUser(){
+//   console.log("hello")
+// }
 
   render(){
 
   return (
     <div className="app">
     <h1>Welcome to Jaanki!</h1>
-    <button onClick={()=> this.createNewUser()}>signup!</button>
-    <button>login</button>
+    <FlashCard words={this.state.stuff}/>
     </div>
   )
 }

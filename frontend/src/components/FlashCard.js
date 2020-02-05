@@ -9,17 +9,17 @@ constructor(){
     currentCard: {},
     toggle: null
   }
-  // this.clickCard = this.clickCard.bind(this)
+  this.clickCard = this.clickCard.bind(this)
 }
 
-// coolFunction(){
-// const randomNum = Math.floor(Math.random() * this.props.words.length + 1);
-//   if(this.props.words.length > 0){
-//     return (
-//       <h1>{this.props.words[randomNum].front}</h1>
-//     )
-//   }
-// }
+coolFunction(){
+const randomNum = Math.floor(Math.random() * this.props.words.length + 1);
+  if(this.props.words.length > 0){
+    return (
+      <h1>{this.props.words[randomNum].front}</h1>
+    )
+  }
+}
 
 setCurrentCard(){
   const randomNum = Math.floor(Math.random() * this.props.words.length);
@@ -36,9 +36,9 @@ clickCard(e){
   this.setState({
     toggle: true
   })
-  // return  (
-  //   <h1>{this.state.currentCard.back}</h1>
-  // )
+  return  (
+    <h1>{this.state.currentCard.back}</h1>
+  )
 }
 
 renderCardBack(){
@@ -70,7 +70,7 @@ renderCardSides(){
   render(){
     return (
       <div className="flashcard">
-      <button onClick={()=>this.setCurrentCard()}>click here!</button>
+      <button onClick={()=>this.clickCard()}>click here!</button>
       {this.renderCardSides()}
       </div>
     )
